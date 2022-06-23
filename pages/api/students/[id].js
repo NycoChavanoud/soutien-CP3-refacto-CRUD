@@ -1,20 +1,26 @@
-const {
-  deleteOneStudent,
+import base from "../../../middlewares/common";
+import {
   getOneStudent,
   patchOneStudent,
-} = require("../../../models/student");
+  deleteOneStudent,
+} from "../../../models/student";
 
-async function handler(req, res) {
-  if (req.method === "DELETE") {
-    const studentToDelete = await deleteOneStudent(req.query.id);
-    return res.status(201).send(studentToDelete);
-  } else if (req.method === "PATCH") {
-    const studentToPatch = await patchOneStudent(req.body);
-    return res.status(201).send(studentToPatch);
-  } else if (req.method === "GET") {
-    const student = await getOneStudent(req.query.id);
-    return res.status(201).send(student);
-  }
-}
+const handleGetOne = async (req, res) => {
+  const student = await getOneStudent(req.query.id);
+  return res.status(201).send(student);
+};
 
-export default handler;
+const patchStudent = async (req, res) => {
+  const studentToPatch = await patchOneStudent(req.body);
+  return res.status(201).send(studentToPatch);
+};
+
+const deleteStudent = async (req, res) => {
+  const studentToDelete = await deleteOneStudent(req.query.id);
+  return res.status(201).send(studentToDelete);
+};
+
+export default base()
+  .get(handleGetOne)
+  .patch(patchStudent)
+  .delete(deleteStudent);
