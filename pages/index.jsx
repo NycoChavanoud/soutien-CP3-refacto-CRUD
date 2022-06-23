@@ -5,29 +5,16 @@ export default function Home() {
   return (
     <Layout pageTitle={"ACCUEIL "}>
       <div className={style.homeContainer}>
-        ACCUEIL
+        <h2>Soutien au checkpoint de demain...</h2>
+        <div className={style.textHome}>Voici le nouveau but du jeu :</div>
         <div className={style.textHome}>
-          Bienvenue sur le second DOJO DEBUG de la saison. Comme vous êtes tous
-          de jeunes dévéloppeurs incroyablement brillants, je ne doute pas que
-          cet exercice va être d&apos;une incroyable facilité...
+          On va refactoriser le code de l&apos;API en utilisant le package next
+          connect. Donc on oublie pas le middleware.. n&apos;est ce pas...? On
+          va réécrire toute les routes avec un peu plus d&apos;élégance
         </div>
         <div className={style.textHome}>
-          Ce site est la version modèle, pour que vous puissiezanalyser ce que
-          l&apos;on attend de vous. Ensuite, allez cloner le repo à débugger !!!
-          Lien en bas ;)
-        </div>
-        <div className={style.textHome}>
-          Un fichier seed.js vous permettras d&apos;initialiser une base de
-          données avec les bonnes informations de départ... Let&apos;s go...
-          Chasse aux bugs...
-        </div>
-        <div className={style.textHome}>
-          <a
-            href=" https://github.com/NycoChavanoud/start-debug-round2"
-            target="_blank"
-          >
-            https://github.com/NycoChavanoud/start-debug-round2
-          </a>
+          Allé, fait un Use this template, on met en place le projet, sans
+          oublié la db, on execute le seed...
         </div>
       </div>
     </Layout>
