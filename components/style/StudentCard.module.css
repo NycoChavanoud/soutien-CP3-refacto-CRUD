@@ -1,0 +1,60 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 75vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.userCardContainer {
+  height: 100px;
+  width: 200px;
+  color: var(--ligthColor);
+  background: black;
+  margin: 15px 5px;
+  border-radius: 1em;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  color: var(--ligthColor);
+  font-size: 1.2em;
+}
+
+.city {
+  font-size: 0.6em;
+  color: var(--ligthColor);
+}
+
+.mapCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deleteBtn {
+  width: 95%;
+  margin-top: -13px;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--redColor);
+  color: var(--ligthColor);
+  font-family: "Amiko", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.deleteBtn:hover {
+  color: var(--darkColor);
+}

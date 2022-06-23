@@ -1,0 +1,16 @@
+.headerContainer {
+  background-color: var(--darkColor);
+  color: var(--ligthColor);
+  height: 70px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.linkHeader {
+  cursor: pointer;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+}

@@ -1,0 +1,8 @@
+.studentListContainer {
+  width: 90%;
+  max-width: 860px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

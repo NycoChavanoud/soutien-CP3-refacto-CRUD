@@ -1,0 +1,44 @@
+.formContainer {
+  margin: 10px auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelForm {
+  margin: 20px auto 0px;
+  font-size: 1.4em;
+}
+
+.inputForm {
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.textareaForm {
+  font-size: 1.2em;
+  border-radius: 5px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.btnForm {
+  margin: 25px auto 0px;
+  width: 55%;
+  height: 40px;
+  border: none;
+  background-color: var(--redColor);
+  color: var(--ligthColor);
+  font-family: "Amiko", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnForm:hover {
+  color: var(--darkColor);
+}

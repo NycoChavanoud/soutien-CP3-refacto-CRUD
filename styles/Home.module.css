@@ -1,0 +1,14 @@
+.homeContainer {
+  width: 90%;
+  max-width: 860px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textHome {
+  max-width: 500px;
+  margin: 15px auto;
+  text-align: justify;
+}

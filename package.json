@@ -1,0 +1,41 @@
+{
+  "name": "dojo_debug_2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "showDB": "npx prisma studio",
+    "seed": "npx prisma db seed"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.15.0",
+    "axios": "^0.27.2",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "prisma": "^3.15.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NycoChavanoud/dojo-debug.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NycoChavanoud/dojo-debug/issues"
+  },
+  "homepage": "https://github.com/NycoChavanoud/dojo-debug#readme",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
